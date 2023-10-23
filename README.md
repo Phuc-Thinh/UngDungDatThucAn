@@ -71,9 +71,7 @@ Dự án này là một ứng dụng di động Android cho phép người dùng
 ## Tác Giả
 
 - Tên: Vũ Huy Hoàng - Nguyễn Phúc Thịnh
-- Email: [2051012031hoang@ou.edu.vn - ]
-
-
+- Email: [2051012031hoang@ou.edu.vn - 2051012110thinh@ou.edu.vn]
 
 ---
 
