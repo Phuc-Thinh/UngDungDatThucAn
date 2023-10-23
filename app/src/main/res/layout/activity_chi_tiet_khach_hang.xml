@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChiTietKhachHang">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dlMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbSua"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title=" ">
+
+                <ImageView
+                    android:id="@+id/ivTrang1"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/kfc" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:text="Chi tiết tài khoản"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/TenKH"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtTenKH"
+                    android:layout_width="262dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textSize="20dp">
+
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/SoDienThoai"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtSDT"
+                    android:layout_width="262dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textSize="20dp">
+
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/Email"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtEmail1"
+                    android:layout_width="262dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textSize="20dp">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/DiaChi"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtDiaChi1"
+                    android:layout_width="262dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textSize="20dp">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="19dp"
+                    android:text="Mật khẩu:"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtMatKhau1"
+                    android:layout_width="262dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textSize="20dp">
+
+                </EditText>
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/spinQuyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnThemKH"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSuaKH"
+                android:layout_width="100dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/pinkk"
+                android:text="Sửa"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

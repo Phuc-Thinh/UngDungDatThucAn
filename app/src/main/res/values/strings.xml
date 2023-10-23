@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UngDungDatThucAn</string>
+    <string name="dangnhap_text"><u>Đăng nhập</u></string>
+    <string name="dangki_text"><u>Đăng kí</u></string>
+    <string name="ThemMonAn_text"><b>Them Mon An</b></string>
+    <string name="ThemKH"><b>Thêm khách hàng</b></string>
+    <string name="ChiTietKH"><b>Chi tiết khách hàng</b></string>
+    <string name="Xinchao"><b>Xin chào:</b></string>
+    <string name="TenKH"><i>Tên khách hàng:</i></string>
+    <string name="SoDienThoai"><i>Số điện thoại:</i></string>
+    <string name="Email"><i>Email:</i></string>
+    <string name="DiaChi"><i>Địa chỉ:</i></string>
+</resources>
