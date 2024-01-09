@@ -17,6 +17,7 @@ Dự án này là một ứng dụng cho phép người dùngg quản lý các t
 2. **Restore Database để kết nối dữ liệu**
 
 - Mở SQL Server và đăng nhập vào.
+
 - Chọn foler Databases và nhấp chuột phải chọn Restore Database.
 ![alt](https://github.com/Phuc-Thinh/UngDungDatThucAn/assets/86865616/69ea633d-a354-497c-9d36-33a065b6fbe4)
 
