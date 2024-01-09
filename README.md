@@ -1,76 +1,50 @@
-# Ứng dụng đặt thức ăn 
+# Ứng dụng quản lý nhân sự
 
 ## Mô tả
 
-Dự án này là một ứng dụng di động Android cho phép người dùng đặt thức ăn từ cửa hàng.
+Dự án này là một ứng dụng cho phép người dùngg quản lý các tính năng liên quan đến nhân sự.
 
 ## Yêu Cầu
 
-- Android Studio (phiên bản 4.2 trở lên)
-- XAMPP (phiên bản 8.0.28 / PHP 8.0.28 trở lên dành cho máy Windows)
+- DevExpress phiên bản 21.2.6
 
 ## Cài Đặt
 
-1. **Cài đặt XAMPP** ([XAMPP](https://www.apachefriends.org/download.html))
-- Chi tiết cài đặt XAMPP xem trong file Word
+1. **Mở Dự Án Trong Visual Studio 2019**
+- Mở Visual Studio 2019
+- Chọn PHANMEMQUANLYNHANSU.sln
 
-2. **Mở Dự Án Trong Android Studio**
-- Mở Android Studio
-- Chọn `Open an existing Android Studio project`
-- Đến thư mục chứa mã nguồn và chọn Folder *UngDungDatThucAn*
+2. **Restore Database để kết nối dữ liệu**
 
-3. **Cấu Hình Kết Nối Cơ Sở Dữ Liệu**
+- Mở SQL Server và đăng nhập vào.
+- Chọn foler Databases và nhấp chuột phải chọn Restore Database.
+![alt](https://github.com/Phuc-Thinh/UngDungDatThucAn/assets/86865616/69ea633d-a354-497c-9d36-33a065b6fbe4)
 
-- Mở XAMPP và bấm Start vào 2 mục Apache và MySQL.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/Xampp1.png?ref_type=heads)
+- Tích chọn Device và nhấn vào dấu 3 chấm. Chọn Add để thêm file sql đã tải về trước đó và nhấn OK.
+![alt](https://github.com/Phuc-Thinh/UngDungDatThucAn/assets/86865616/438f9e65-99f2-40f5-8a74-67913e99680d)
 
-- Bấm vào mục Admin của MySQL để khởi động phpMyAdmin.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/phpAdmin.png?ref_type=heads)
+- Tại Database ở mục Destination bấm dấu mũi tên để thả cửa sổ xuống và chọn QuanLyNhanSu.
+![alt](https://github.com/Phuc-Thinh/UngDungDatThucAn/assets/86865616/fb70b429-e3f4-465d-937f-03c09ff8ff89)
 
-- Tạo 1 database mới và đặt tên *ungdungdatthucan*.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/NewDB.png?ref_type=heads)
+- Nhấn OK để hoàn thành việc Restore Database.
 
-- Import cơ sở dữ liệu từ tệp `ungdungdatthucan.sql` vào phpMyAdmin.Kéo xuống cuối cùng và nhấn nút Import.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/AddDB.png?ref_type=heads)
-
-- Màn hình khi Import cơ sở dữ liệu thành công.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/AddDBSuccess.png?ref_type=heads)
-
-- Vào thư mục chứa XAMPP mà bạn đã chọn để cài đặt và mở thư mục *htdocs*.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/HtDocs.png?ref_type=heads)
-
-- Sau đó thêm thư mục *ungdungdatthucan* gồm các file php vào.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/themphp.png?ref_type=heads)
-- 
-4. **Cấu Hình API Endpoint**
-- Mở Command Prompt trên máy tính của bạn và gõ lệnh ipconfig.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/ipconfig.png?ref_type=heads)
-
-- Kéo xuống phần **Wireless LAN adapter Wi-Fi** và copy địa chỉ của *IPv4 Address*
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/IPAddress.png?ref_type=heads)
-
-- Trong mã nguồn, mở `Utils.java` và thay đổi địa chỉ đường dẫn ứng với máy tính của bạn.
-![Alt text](https://gitlab.com/noinho1202/doannganh/-/raw/master/Ultis.png?ref_type=heads)
-
-5. **Chạy Ứng Dụng**
-- Kết nối thiết bị Android hoặc sử dụng máy ảo.
-- Bấm nút "Run" trong Android Studio để chạy ứng dụng trên thiết bị đã kết nối.
+2. **Chạy Ứng Dụng**
+- Bấm RUN hoặc CTRL + F5 để chạy phần mềm.
 
 ## Sử Dụng
 
-- Mở ứng dụng trên thiết bị Android của bạn.
-- Đăng nhập hoặc đăng ký tài khoản mới.
-- Bắt đầu đặt thức ăn từ danh sách nhà hàng có sẵn.
+- Đăng nhập với tài khoản và mật khẩu đều là "admin".
+- Bắt đầu sử dụng phần mềm.
 
 ## Ghi Chú
 
-- Đảm bảo rằng XAMPP đã được cài đặt và đang chạy để cung cấp máy chủ MySQL.
-- Đảm bảo rằng bạn đã đổi địa chỉ đường dẫn tương ứng với máy tính của bạn.
+- Đảm bảo rằng phiên bản DexExpress 21.2.6.
+- Đảm bảo đã Restore Database tương ứng.
 
 ## Tác Giả
 
-- Tên: Vũ Huy Hoàng - Nguyễn Phúc Thịnh
-- Email: [2051012031hoang@ou.edu.vn - 2051012110thinh@ou.edu.vn]
+- Tên: Nguyễn Phúc Thịnh
+- Email: [2051012110thinh@ou.edu.vn]
 
 ---
 
